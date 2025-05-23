@@ -1,0 +1,17 @@
+commit e845bf112ee541c383894c9aca15ea0a457ca8ed
+Author: [Xander <[xreyeso@miumg.edu.gt]>
+Date:   Fri May 23 16:56:39 2025 -0600
+
+    suma
+
+commit 2834844612c37afb498869ce4a2aef76482a0174
+Author: [Xander <[xreyeso@miumg.edu.gt]>
+Date:   Fri May 23 16:41:59 2025 -0600
+
+    intento uno
+
+commit bd33800617f64d51d1b3c5fec08303ad230409d8
+Author: angelandroq <aroquelm1@miumg.edu.gt>
+Date:   Fri May 23 16:32:34 2025 -0600
+
+    Initial commit
