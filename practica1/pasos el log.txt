@@ -1,0 +1,22 @@
+pasos el log 
+
+•Paso 1: nos metemos a la carpeta donde tenemos nuestros archivos 
+•Paso 2: git pull antes de hacer todo 
+•Paso 3: git status 
+•Paso 4: creamos rama (git Branch <nombre rama 
+•Paso 5: git checkout <nombre rama> 
+•Paso 6: git log --author "correo electrónico" > nombre que quieres que aparezca 
+el archivo, por ejemplo: logHersonGiron.txt 
+EJEMPLO: 
+git log --author "gironnnherson@gmail.com" > logHersonGiron.txt 
+•Paso 7: git add -f logHersonGiron.txt 
+•Paso 8: git commit -m "comentario que desees" 
+•Paso 9: git checkout main 
+•Paso 10: git merge 
+•Paso 11: git push origin <nombre rama> 
+Código que corrige el layout: 
+git restore 
+Por ejemplo: 
+git restore Nominas/Nominas.layout o git restore Nominas 
+Lo de la rama solo lo hacen los integrantes, el coordinador 
+puede hacerlo desde EJEMPLO en adelante 
