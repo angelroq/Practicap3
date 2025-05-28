@@ -1,0 +1,38 @@
+SQL 
+Estructura básica de la sentencia SELECT
+SELECT DEPTNO, DEPTNAME, ADMRDEPT
+FROM DEPARTMENT
+
+Estructura básica de la sentencia INSERT
+La inserción
+• INSERT INTO CLIENTES VALUES (1111,'Mario',
+'C/. Mayor, 3');
+• Es equivalente a las siguientes sentencias
+• INSERT INTO CLIENTES (NOMBRE,DIR,DPI)
+VALUES ('Mario','C/. Mayor, 3',1111);
+• INSERT INTO CLIENTES (DPI,DIR,NOMBRE)
+VALUES (1111,'C/. Mayor, 3’,'Mario');
+
+Estructura básica de la sentencia UPDATE
+Suma del 5% de interés a los saldos de todas las cuentas.
+• UPDATE CUENTAS SET SALDO = SALDO * 1.05;
+• Suma del 1% de bonificación a aquellas cuentas cuyo saldo sea superior a 100.000 €.
+• UPDATE CUENTAS SET SALDO = SALDO * 1.01
+WHERE SALDO > 100000;
+• Modificación de DNI y saldo simultáneamente para el código 898.
+• UPDATE CUENTAS SET DNI='555', SALDO=10000
+WHERE COD LIKE '898';
+
+Estructura básica de la sentencia DELETE
+ Ejemplos: para la BD de CLIENTES, CUENTAS, SUCURSALES.
+• Eliminar todas cuentas con código entre 1000 y 1100.
+• DELETE FROM CUENTAS WHERE COD BETWEEN 1000 AND 1100;
+• Eliminar todas las cuentas del cliente “Jose María García”.
+• DELETE FROM CUENTAS WHERE DNI IN
+(SELECT DNI FROM CLIENTES
+WHERE NOMBRE LIKE 'Jose María García');
+• Eliminar todas las cuentas de sucursales situadas en "Chinchón".
+• DELETE FROM CUENTAS WHERE NSUCURS IN
+(SELECT NSUC FROM SUCURSALES
+WHERE CIUDAD LIKE 'Chinchón');
+

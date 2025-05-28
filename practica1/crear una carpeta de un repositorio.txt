@@ -1,0 +1,15 @@
+crear una carpeta de un repositorio 
+
+Como crear una carpeta en github a través de git
+Primer paso: Ingresamos a nuestra carpeta donde queramos clonar el repositorio y lo clonamos.
+Segundo paso: ingresamos a la carpeta del repositorio
+Tercer paso: Usaremos mkdir (nombre de la carpeta) 
+Nota: El nombre de la carpeta no puede llevar ningún espacio
+Ejemplo:
+medir HersonGiron99592420
+Cuarto paso: Ingresamos a la carpeta creada y le agregamos un archivo txt de la siguiente manera:
+touch readme.txt
+Ultimo paso: lo subimos al repositorio con:
+add .
+git commit -m “”
+git push origin main
