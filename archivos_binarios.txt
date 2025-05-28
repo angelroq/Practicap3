@@ -1,0 +1,36 @@
+
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    // Crear un archivo binario
+    ofstream archivo("datos.bin", std::ios::binary);
+    if (!archivo) {
+        std::cerr << "Error al crear el archivo" << std::endl;
+        return 1;
+    }
+
+    // Escribir datos en el archivo
+    int dato = 123;
+    archivo.write(reinterpret_cast<char*>(&dato), sizeof(dato));
+
+    // Cerrar el archivo
+    archivo.close();
+
+    // Leer el archivo
+    ifstream archivoLectura("datos.bin", std::ios::binary);
+    if (!archivoLectura) {
+        std::cerr << "Error al abrir el archivo" << std::endl;
+        return 1;
+    }
+
+    // Leer datos del archivo
+    int datoLeido;
+    archivoLectura.read(reinterpret_cast<char*>(&datoLeido), sizeof(datoLeido));
+
+    // Mostrar el dato leído
+    cout << "Dato leído: " << datoLeido << std::endl;
+
+    return 0;
+}
